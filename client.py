@@ -5,7 +5,7 @@ import tkinter.scrolledtext
 from tkinter import simpledialog
 import datetime
 
-host = '172.19.195.81'
+host = '172.19.195.81'   #IP DO SERVIDOR
 port = 3000
 
 
