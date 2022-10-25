@@ -1,9 +1,7 @@
 import threading
 import socket
 import os
-import hashlib
 import base64
-from Crypto.Cipher import AES
 
 
 #localhost
