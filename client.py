@@ -5,9 +5,14 @@ import tkinter.scrolledtext
 from tkinter import simpledialog
 import datetime
 
-host = '172.19.195.81'   #IP DO SERVIDOR
+ipserv = input('Digite o IP do servidor que você quer conectar:')
+host = ipserv #IP DO SERVIDOR
 port = 3000
 
+if ipserv:
+    print('Conectado com sucesso!')
+else:
+    print('Erro na conexão!')
 
 class Client:
     def __init__(self, host, port):

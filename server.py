@@ -1,12 +1,17 @@
 import threading
 import socket
 import os
+import hashlib
+import base64
+from Crypto.Cipher import AES
+
 
 #localhost
 hostname = socket.gethostname()
 addr = socket.gethostbyname(hostname) #pegar endereço atual de IPv4
 host = addr
 port = 3000
+print(addr)
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #definindo protocolo (TCP)
 server.bind((host, port)) #Associar o socket a host e porta ao server
