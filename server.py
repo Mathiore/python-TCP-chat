@@ -18,6 +18,8 @@ server.listen() #esperando conexões
 clients = [] #adiciona clientes a lista
 names = [] #nome dos clientes
 
+#teste de push
+
 def transmitir(mensagem):
     for client in clients:
         client.send(mensagem)

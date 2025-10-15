@@ -1,3 +1,5 @@
 /build
 /client.spec
 /dist
+/build.yml
+/sonar-project.properties
